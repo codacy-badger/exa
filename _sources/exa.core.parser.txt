@@ -1,0 +1,7 @@
+exa.core.parser module
+======================
+
+.. automodule:: exa.core.parser
+   :members:
+   :undoc-members:
+   :show-inheritance:

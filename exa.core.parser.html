@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>exa.core.parser module &mdash; exa 0.5.0+1.g1fd9d19 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="exa.util package" href="exa.util.html" />
+    <link rel="prev" title="exa.core.numerical module" href="exa.core.numerical.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> exa
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0+1.g1fd9d19
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sitemap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contrib.html">Development</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="exa.html">exa package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="exa.html#exa">Exa</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="exa.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="exa.core.html">exa.core package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="exa.core.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exa.util.html">exa.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exa.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">exa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="exa.html">exa package</a> &raquo;</li>
+        
+          <li><a href="exa.core.html">exa.core package</a> &raquo;</li>
+        
+      <li>exa.core.parser module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/exa.core.parser.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-exa.core.parser">
+<span id="exa-core-parser-module"></span><h1>exa.core.parser module<a class="headerlink" href="#module-exa.core.parser" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="parsing-editors">
+<h2>Parsing Editors<a class="headerlink" href="#parsing-editors" title="Permalink to this headline">¶</a></h2>
+<p>This module provides editors tailored to parsing small/medium sized text files
+that do not have a consistent structure. The primary goal of parsers is to
+facilitate the creation of modular parsing units. Each parsing unit is
+responsible for transforming a small section of text into an appropriate Python
+data object. Parsing units can be connected under a single API call for ease,
+but each unit should only ever be responsible for a parsing a single, typically
+repetitive, section of text.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This module is currently disabled.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;datablock</span>
+<span class="s1">...</span>
+
+<span class="s1">otherblock</span>
+<span class="s1">this section has metadata or text while the other might have numbers</span>
+
+<span class="s1">datablock</span>
+<span class="s1">...</span>
+
+<span class="s1">otherblock</span>
+<span class="s1">blah</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="k">class</span> <span class="nc">DBlock</span><span class="p">(</span><span class="n">Parser</span><span class="p">):</span>
+    <span class="n">_start</span> <span class="o">=</span> <span class="s2">&quot;datablock&quot;</span>    <span class="c1"># Start line is the string datablock</span>
+    <span class="n">_end</span> <span class="o">=</span> <span class="kc">None</span>             <span class="c1"># Custom ending line</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">Typed</span><span class="p">(</span><span class="n">DataFrame</span><span class="p">)</span> <span class="c1"># Example data object parsed by this section specific parser</span>
+
+    <span class="k">def</span> <span class="nf">_parse_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">starts</span><span class="p">):</span>
+        <span class="c1"># For each starting point find the next blank line</span>
+        <span class="c1"># this is specific to this particular file</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">_parse_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Parsing logic for constructing the data object</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">OBlock</span><span class="p">(</span><span class="n">Parser</span><span class="p">):</span>
+    <span class="n">_start</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;otherblock&quot;</span><span class="p">)</span>    <span class="c1"># To use regex searching, set compiled regex</span>
+    <span class="n">_end</span> <span class="o">=</span> <span class="kc">None</span>                          <span class="c1"># Again custom end line searching</span>
+
+    <span class="k">def</span> <span class="nf">_parse_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">starts</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Wrapper</span><span class="p">(</span><span class="n">Parser</span><span class="p">):</span>
+    <span class="c1"># Could be used to parse additional headers or footers in the file</span>
+    <span class="k">pass</span>
+
+<span class="n">Wrapper</span><span class="o">.</span><span class="n">add_parsers</span><span class="p">(</span><span class="n">DBlock</span><span class="p">,</span> <span class="n">OBlock</span><span class="p">)</span>
+
+<span class="n">parser</span> <span class="o">=</span> <span class="n">Wrapper</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">sections</span>           <span class="c1"># Automatically display 4 total sections, 2 datablocks, 2 otherblocks</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">get_section</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>     <span class="c1"># The sections object is sorted by starting line number so this is the first datablock</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>             <span class="c1"># Display information about available data objects/additional parsers</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>            <span class="c1"># Populate all data objects on each of parsers (per section)</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For additional information about searching, see
+<a class="reference internal" href="exa.core.editor.html#exa.core.editor.Editor" title="exa.core.editor.Editor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Editor</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Match</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Matches</span></code>, and <code class="xref py py-class docutils literal notranslate"><span class="pre">Found</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="exa.util.html" class="btn btn-neutral float-right" title="exa.util package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="exa.core.numerical.html" class="btn btn-neutral float-left" title="exa.core.numerical module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 
+      <span class="lastupdated">
+        Last updated on Jul 03, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

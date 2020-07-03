@@ -1,0 +1,7 @@
+exa.core.composer module
+========================
+
+.. automodule:: exa.core.composer
+   :members:
+   :undoc-members:
+   :show-inheritance:
